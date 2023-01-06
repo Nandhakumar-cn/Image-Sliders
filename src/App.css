@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
-}
+h1{
+  color: rgb(240, 240, 248);
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align:center;
+  text-shadow: 0 0 5px rgb(9, 166, 245),0 0 10px rgb(10, 143, 245),
+  0 0  15px rgb(47, 212, 237),0 0 20px blue,0 0 25px blue;
+  
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
+.container{
+  width: 100%;
+  height: 80vh;
+  max-width: 1600px;
+  user-select: none;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  border: 5px skyblue ;
+  box-shadow: 0px 0px 3px 3px grey;
+  margin: 0 auto; 
+
+
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.slide-container{
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+}
+.prev{
+  width: 35px;
+  height: 53px;
+  cursor: pointer;
+  color: black;
+  background-color: yellow;
+  position: absolute;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  top: 50%;
+  text-align: center;
+ align-content: center;  
+ font-size: 40px;
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.prev:hover{
+  color:white;
+  background-color: orangered;
+  font-size: 41px;
+}
+.next{
+  width: 35px;
+  height: 53px;
+  cursor: pointer;
+  color: black;
+  background-color: yellow;
+  position: absolute;
+  display: flex;
+  left:auto;
+  right: 0;
+  top: 50%;
+  text-align: center;
+ justify-content: center;  
+ font-size: 40px;
+}
+.next:hover{
+  color:white;
+  background-color: orangered;
+  font-size: 41px;
 }
